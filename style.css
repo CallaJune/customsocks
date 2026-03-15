@@ -153,10 +153,7 @@ form {
   font-weight: 700;
 }
 
-#sockForm.single-side .grid-head {
-  grid-template-columns: minmax(170px, 1.6fr) 1fr;
-}
-
+#sockForm.single-side .grid-head,
 #sockForm.single-side .measurement-row {
   grid-template-columns: minmax(170px, 1.6fr) 1fr;
 }
@@ -184,8 +181,12 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(241, 184, 65, 0.25);
 }
 
-#measurementUnit {
+#measurementUnit,
+.needle-size-unit-select {
   width: auto;
+}
+
+#measurementUnit {
   min-width: 8.5rem;
 }
 
@@ -208,7 +209,6 @@ select:focus {
 }
 
 .needle-size-unit-select {
-  width: auto;
   min-width: 5.1rem;
 }
 
@@ -245,10 +245,6 @@ button:hover {
   margin: 0;
   color: var(--hot);
   min-height: 1.2em;
-}
-
-.print-panel {
-  border-style: dashed;
 }
 
 .pattern-output {
