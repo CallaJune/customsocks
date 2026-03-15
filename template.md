@@ -36,9 +36,13 @@ Now that your heel flap is complete, it's time to turn the heel.
 
 You should have ended your heel flap after a purl row.
 
-Row 1: Sl1, k to center, ssk, k1, turn.
+Row 1: sl 1, k {heel_turn_center_s_l} (L) / {heel_turn_center_s_r} (R), ssk, k1, turn.
 
-Row 2: Sl1, p to center, p2tog, p1, turn.
+Row 2: sl1, p 5, p2tog, p1, turn.
+
+Row 3: sl 1, k 6, ssk, k1, turn.
+
+Row 4: sl1, p 7, p2tog, p1, turn.
 
 Continue in this pattern until all heel stitches have been worked.
 
@@ -62,7 +66,7 @@ Repeat these two rows until you have {foot_s_l} (L) / {foot_s_r} (R) stitches.
 
 Knit in stockinette until the work reaches the tip of the wearer's pinky toe.
 
-If you cannot try on the sock, continue until {foot_r_l} (L) / {foot_r_r} (R) rows have been worked from the gusset.
+If you cannot try on the sock, continue until {foot_r_l} (L) / {foot_r_r} (R) rows have been worked from the gusset, including the first row in which you picked up stitches from both sides of the heel flap.
 
 ## Toe
 
@@ -78,4 +82,4 @@ Repeat rows 1 and 2 until {toe_decrease1_s_l} (L) / {toe_decrease1_s_r} (R) stit
 
 Then repeat row 1 until {toe_decrease2_s_l} (L) / {toe_decrease2_s_r} (R) stitches remain.
 
-Graft with Kitchener stitch.
+To finish, graft the toe stitches closed using the kitchener stitch.
