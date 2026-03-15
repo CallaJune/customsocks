@@ -121,6 +121,25 @@ form {
   font-weight: 600;
 }
 
+.measurement-name {
+  display: block;
+}
+
+.measurement-input-wrap {
+  display: grid;
+  gap: 0.24rem;
+}
+
+.side-label {
+  display: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
 .unit-controls {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +180,10 @@ form {
 #sockForm.single-side .right-head,
 #sockForm.single-side .right-input {
   display: none;
+}
+
+#sockForm.single-side .left-head {
+  visibility: hidden;
 }
 
 input,
@@ -305,6 +328,10 @@ button:hover {
     border-radius: 12px;
     padding: 0.56rem;
     background: #fffefb;
+  }
+
+  #sockForm:not(.single-side) .measurement-row .side-label {
+    display: block;
   }
 
   .gauge-row {
