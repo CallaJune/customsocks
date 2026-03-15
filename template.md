@@ -36,7 +36,7 @@ Now that your heel flap is complete, it's time to turn the heel.
 
 You should have ended your heel flap after a purl row.
 
-Row 1: sl 1, k {heel_turn_center_s_l} (L) / {heel_turn_center_s_r} (R), ssk, k1, turn.
+Row 1: sl 1, k {heel_flap_s_l / 2} (L) / {heel_flap_s_r / 2} (R), ssk, k1, turn.
 
 Row 2: sl1, p 5, p2tog, p1, turn.
 

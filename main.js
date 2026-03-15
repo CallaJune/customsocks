@@ -226,9 +226,36 @@ function fillTemplate(template, values) {
   let output = template;
   const tokens = [...new Set(template.match(/\{[^{}]+\}/g) ?? [])];
 
+  const formatResolvedValue = (value) => {
+    if (typeof value === "number" && Number.isFinite(value)) {
+      return Number.isInteger(value) ? String(value) : String(Number(value.toFixed(2)));
+    }
+    return String(value);
+  };
+
+  const resolveTokenValue = (expression) => {
+    if (Object.hasOwn(values, expression)) {
+      return formatResolvedValue(values[expression]);
+    }
+
+    const divideMatch = /^([a-zA-Z_]\w*)\s*\/\s*(\d+(?:\.\d+)?)$/.exec(expression);
+    if (!divideMatch) {
+      return null;
+    }
+
+    const baseValue = Number(values[divideMatch[1]]);
+    const divisor = Number(divideMatch[2]);
+    if (!Number.isFinite(baseValue) || !Number.isFinite(divisor) || divisor === 0) {
+      return null;
+    }
+
+    return formatResolvedValue(baseValue / divisor);
+  };
+
   for (const token of tokens) {
-    const key = token.slice(1, -1);
-    const value = Object.hasOwn(values, key) ? String(values[key]) : token;
+    const expression = token.slice(1, -1).trim();
+    const resolved = resolveTokenValue(expression);
+    const value = resolved === null ? token : String(resolved);
     output = output.replaceAll(token, value);
   }
 

@@ -70,7 +70,6 @@ function calculateSidePattern(footCircIn, gussetCircIn, footLengthIn, stitchGaug
 
   // Row 20 formulas.
   const heel_flap_s = cast_on_s / 2;
-  const heel_turn_center_s = heel_flap_s / 2;
 
   // C20/E20: CEILING(heel_flap_stitches * (gusset_circumference/foot_length), 2)
   const gussetToFootRatio = gussetCircIn / footLengthIn;
@@ -91,7 +90,6 @@ function calculateSidePattern(footCircIn, gussetCircIn, footLengthIn, stitchGaug
   return {
     cast_on_s,
     heel_flap_s,
-    heel_turn_center_s,
     heel_flap_r,
     after_heel_turn_s,
     after_heel_turn_r,
@@ -146,8 +144,6 @@ function calculateSock(inputs) {
     cast_on_s_r: right.cast_on_s,
     heel_flap_s_l: left.heel_flap_s,
     heel_flap_s_r: right.heel_flap_s,
-    heel_turn_center_s_l: left.heel_turn_center_s,
-    heel_turn_center_s_r: right.heel_turn_center_s,
     heel_flap_r_l: left.heel_flap_r,
     heel_flap_r_r: right.heel_flap_r,
     after_heel_turn_s_l: left.after_heel_turn_s,
