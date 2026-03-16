@@ -18,7 +18,7 @@ To begin, first knit {heel_flap_s_l} (L) / {heel_flap_s_r} (R) stitches.
 
 Those stitches are the first half of your stitches (top of foot). The second half is where you will knit your heel.
 
-Now that you have knit across the first half of your stitches, cut your main color and pick up your contrasting color.
+If you are using a contrasting color for the heel, cut your main color and pick up your contrasting color.
 
 Work back and forth across the next {heel_flap_s_l} (L) / {heel_flap_s_r} (R) stitches.
 
@@ -50,9 +50,13 @@ You should now have {after_heel_turn_s_l} (L) / {after_heel_turn_s_r} (R) heel s
 
 ## Gusset
 
-With right side facing, pick up and knit stitches along the left side of the heel flap.
+With right side of the heel flap facing you, pick up and knit stitches along the left side of the heel flap. If you were using a contrast color for the heel, cut the yarn and pick up the heel flap stitches using the main color. 
 
-Knit across front-of-foot stitches.
+Please a beginning of round marker.
+
+Knit across the {heel_flap_s_l / 2} (L) / {heel_flap_s_r / 2} (R) front-of-foot stitches.
+
+Place a second marker.
 
 Pick up and knit stitches along the right side of heel flap, then continue around.
 
@@ -70,7 +74,7 @@ If you cannot try on the sock, continue until {foot_r_l} (L) / {foot_r_r} (R) ro
 
 ## Toe
 
-Cut main color and pick up contrasting color.
+If you are using a contrasting color for the toe, cut main color and pick up contrasting color.
 
 Knit one round even, then shape toe:
 
